@@ -16,20 +16,4 @@
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/navigation" />
 
-
-    <!-- xml -->
-    <a.s.d.w.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <a.s.d.w.BottomNavigationView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            app:menu="@menu/item_bottom_navigation" />
-
-    </a.s.d.w.CoordinatorLayout>
-
-    
-
 </android.support.constraint.ConstraintLayout>
