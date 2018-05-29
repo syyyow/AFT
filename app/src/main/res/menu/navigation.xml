@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_product"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="商品" />
+
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="カート" />
+
+    <item
+        android:id="@+id/navigation_delivery_status"
+        android:icon="@drawable/ic_local_shipping_black_24dp"
+        android:title="配送状況" />
+
+    <item
+        android:id="@+id/navigation_mypage"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="マイページ" />
+
+    <item
+        android:id="@+id/navigation_other"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="その他" />
+
+
+</menu>

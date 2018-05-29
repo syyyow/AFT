@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AFT</string>
+    <string name="title_product">商品</string>
+    <string name="title_cart">カート</string>
+    <string name="title_delivery_status">配送状況</string>
+    <string name="title_mypage">マイページ</string>
+    <string name="title_other">その他</string>
+</resources>
