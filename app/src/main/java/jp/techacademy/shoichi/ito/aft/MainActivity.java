@@ -41,4 +41,36 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
     };
+    private BottomNavigationView bnv;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        bnv.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.navigation_product:
+                        setFragment();
+                        return true;
+                    case R.id.navigation_cart:
+                        setFragment();
+                        return true;
+                    case R.id.navigation_mypage:
+                        setFragment();
+                        return true;
+                    case R.id.navigation_delivery_status:
+                        setFragment();
+                        return true;
+                    case R.id.navigation_other:
+                        setFragment();
+                        return true;
+                }
+                return false;
+            }
+        });
+    }
 }
