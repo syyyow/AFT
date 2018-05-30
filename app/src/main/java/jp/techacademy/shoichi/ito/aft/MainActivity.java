@@ -8,7 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+
 
 import jp.techacademy.shoichi.ito.aft.R;
 
@@ -48,29 +50,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        findViewById(R.id.navigation_product).setOnClickListener(new View.OnClickListener(){
 
-        bnv.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.navigation_product:
-                        setFragment();
-                        return true;
-                    case R.id.navigation_cart:
-                        setFragment();
-                        return true;
-                    case R.id.navigation_mypage:
-                        setFragment();
-                        return true;
-                    case R.id.navigation_delivery_status:
-                        setFragment();
-                        return true;
-                    case R.id.navigation_other:
-                        setFragment();
-                        return true;
-                }
-                return false;
-            }
-        });
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(this, Product.class);
+            startActivity(intent);
+
+        }
     }
 }
