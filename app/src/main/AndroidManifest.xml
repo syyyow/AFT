@@ -18,7 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity2"></activity>
+        <activity android:name=".Product" />
+        <activity android:name=".Cart" />
+        <activity android:name=".Delivery_status" />
+        <activity android:name=".Mypage" />
+        <activity android:name=".Other"></activity>
     </application>
 
 </manifest>
